@@ -7,7 +7,8 @@ nav {
 
     border-bottom: 1px solid #888;
     position: sticky;
-    top: 0px;
+    top: 0;
+    padding-top: 5px;
     background-color: #fefefe;
 
 }
@@ -29,7 +30,7 @@ nav ul li {
 
 section {
 
-    margin: 10%;
+    margin: 7%;
 
 }
 
@@ -91,6 +92,11 @@ article button a {
     border-radius: 8px;
     padding: 4%;
     text-align: center;
+}
+
+article a {
+    text-align: center;
+    font-weight: 600;
 }
 
 @media (max-width:400px) {
