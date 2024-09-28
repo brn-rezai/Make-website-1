@@ -10,6 +10,7 @@ nav {
     top: 0;
     padding-top: 5px;
     background-color: #fefefe;
+    z-index: 1;
 
 }
 
@@ -50,8 +51,10 @@ article {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 40px 0;
     margin: 10px;
+    width: 180px;
+    justify-content: center;
 }
 
 article span {
@@ -65,11 +68,15 @@ article span {
     border-bottom-left-radius: 100%;
     font-weight: 800;
     box-shadow: 1px 2px 5px #888;
+    position: relative;
+    margin: auto;
 }
 
 article img {
     width: 95px;
     height: 95px;
+    position: relative;
+    margin: auto;
 }
 
 article p {
@@ -98,16 +105,6 @@ article a {
     font-weight: 600;
 }
 
-@media (max-width:400px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    .des {
-        height: 300px;
-        overflow: auto;
-    }
-}
 
 .des tbody tr th {
     border-right: 1px solid #888;
@@ -121,4 +118,59 @@ article a {
 .center-1 {
     display: flex;
     justify-content: center;
+}
+
+.tablesec {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.tablesec tr th:first-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tablesec td {
+    border: 2px solid #000;
+    ;
+}
+
+div[class="des"] {
+    width: 85%;
+}
+
+@media (max-width:400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .des {
+        height: 300px;
+        overflow: auto;
+    }
+
+    .mobile th {
+        border-bottom: 1px solid #888;
+        padding-bottom: 10px;
+    }
+
+    .mobile tbody tr td {
+        padding-top: 10px;
+    }
+
+    .mobile table tr td {
+        height: 400px;
+        overflow: auto;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 400px) {
+    .mobile {
+        display: none;
+    }
 }
