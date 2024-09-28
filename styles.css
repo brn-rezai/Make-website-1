@@ -31,7 +31,6 @@ nav ul li {
 section {
 
     margin: 7%;
-
 }
 
 .des {
@@ -51,7 +50,7 @@ article {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 3%;
     margin: 10px;
 }
 
@@ -108,4 +107,18 @@ article a {
         height: 300px;
         overflow: auto;
     }
+}
+
+.des tbody tr th {
+    border-right: 1px solid #888;
+    padding-right: 10px;
+}
+
+.des tbody tr td {
+    padding-left: 10px;
+}
+
+.center-1 {
+    display: flex;
+    justify-content: center;
 }
